@@ -101,9 +101,27 @@ nav a:active {
   position: relative;
 }
 
-/* .accounts .dropdown {
-  position: absolute;
-} */
+.language > a {
+  /* vertical-align: middle; */
+}
+
+.arrow {
+  display: inline-block;
+  font-size: 12px;
+  /* line-height: 19px; */
+}
+
+.language:hover .arrow-down {
+  display: none;
+}
+
+.arrow-up {
+  display: none;
+}
+
+.language:hover .arrow-up {
+  display: inline-block;
+}
 
 .app a {
   display: inline-block;
@@ -121,6 +139,11 @@ nav a:active {
 }
 
 /* main */
+/* title */
+h1 {
+  border: 1px solid blue;
+}
+
 p {
   border: 1px solid red;
 }
