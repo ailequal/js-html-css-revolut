@@ -1,13 +1,13 @@
 // main
 $(document).ready(
   function () {
-    $('.dropdownlink').click(
-      function () {
-        var hover = $(this);
-        var dropdown = hover.children('.dropdown');
-        dropdown.toggleClass('active');
-      }
-    );
+    // $('.dropdownlink').click(
+    //   function () {
+    //     var hover = $(this);
+    //     var dropdown = hover.children('.dropdown');
+    //     dropdown.toggleClass('active');
+    //   }
+    // );
     $('.dropdownlink').mouseenter(
       function () {
         var hover = $(this);
