@@ -76,11 +76,11 @@ nav a:active {
   color: rgb(25, 28, 31);
 }
 
-.logo {
+.logo a {
   display: inline-block;
 }
 
-.logo svg {
+.logo a svg {
   fill: url("#linearGradient");
   color: white;
 }
@@ -136,6 +136,29 @@ nav a:active {
 .app a:active {
   background-color: rgb(210, 0, 126);
   color: rgb(255, 255, 255);
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  nav ul li {
+    display: none;
+  }
+
+  .logo,
+  .hamburger {
+    display: inline-block;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+}
+
+.hamburger a {
+  font-size: 46px;
 }
 
 /* main */
