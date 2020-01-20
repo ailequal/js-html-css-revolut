@@ -10,18 +10,79 @@ body {
   font-size: 16px;
 }
 
-/* main */
+.container {
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 0 20px;
+}
+
+/* header */
+/* nav */
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+nav li {
+  padding: 0 12px;
+}
+
+nav li:first-child {
+  padding: 0 10px 0 0;
+}
+
+nav li:last-child {
+  padding: 0 0 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(139, 149, 158);
+}
+
+nav a:focus,
+nav a:hover,
+nav a:active {
+  color: rgb(25, 28, 31);
+}
+
+.logo {
+  display: inline-block;
+}
+
 .logo svg {
   fill: url("#linearGradient");
   color: white;
 }
 
+.personal a {
+  color: rgb(25, 28, 31);
+}
 
-/* pink */
-/* background-color: rgb(235, 0, 141); */
+.business {
+  margin-right: auto;
+}
 
-/* almost black */
-/* color: rgb(25, 28, 31); */
+.app a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgb(235, 0, 141);
+  color: rgb(255, 255, 255);
+}
 
-/* grey */
-/* color: rgb(139, 149, 158); */
+.app a:focus,
+.app a:hover,
+.app a:active {
+  background-color: rgb(210, 0, 126);
+  color: rgb(255, 255, 255);
+}
+
+/* main */
+p {
+  border: 1px solid red;
+}
+
+
+/* width: 992px > go hamburger menu */
