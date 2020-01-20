@@ -34,6 +34,10 @@ ul {
   display: block;
 }
 
+.none {
+  display: none;
+}
+
 .dropdown li {
   padding: 10px 16px;
 }
@@ -142,22 +146,7 @@ nav a:active {
   display: none;
 }
 
-@media screen and (max-width: 992px) {
-  nav ul li {
-    display: none;
-  }
-
-  .logo,
-  .hamburger {
-    display: inline-block;
-  }
-
-  .logo {
-    margin-right: auto;
-  }
-}
-
-.hamburger a {
+.hamburger > a {
   font-size: 46px;
 }
 
@@ -171,5 +160,52 @@ p {
   border: 1px solid red;
 }
 
+/* media queries */
+@media screen and (max-width: 992px) {
+  nav > ul > li {
+    display: none;
+  }
 
-/* width: 992px > go hamburger menu */
+  .logo,
+  .hamburger {
+    display: inline-block;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  .hamburger ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .hamburger li {
+    padding: 50px 0 0 40px;
+  }
+
+  .hamburger .line {
+    max-width: 90%;
+    height: 2px;
+    background-color: rgb(139, 149, 158);
+    margin: 50px 40px 0 40px;
+    padding: 0;
+  }
+
+  .hamburger li:first-child {
+    text-align: right;
+    margin: 0 40px 0 0;
+  }
+
+  .hamburger li:first-child a {
+    font-size: 46px;
+  }
+
+  .hamburger > ul a {
+    font-size: 20px;
+  }
+}

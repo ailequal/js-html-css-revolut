@@ -22,6 +22,18 @@ $(document).ready(
         dropdown.removeClass('active');
       }
     );
+    $('.hamburger > a').click(
+      function () {
+        $('.hamburger ul').removeClass('none');
+        $('.hamburger ul').addClass('active');
+      }
+    );
+    $('.hamburger ul li:first-child').click(
+      function () {
+        $('.hamburger ul').removeClass('active');
+        $('.hamburger ul').addClass('none');
+      }
+    );
   }
 );
 
