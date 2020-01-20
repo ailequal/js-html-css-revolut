@@ -6,8 +6,22 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
 /* main */
+.logo svg {
+  fill: url("#linearGradient");
+  color: white;
+}
+
+
+/* pink */
+/* background-color: rgb(235, 0, 141); */
+
+/* almost black */
+/* color: rgb(25, 28, 31); */
+
+/* grey */
+/* color: rgb(139, 149, 158); */
