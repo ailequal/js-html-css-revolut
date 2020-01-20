@@ -1,35 +1,45 @@
 // main
 $(document).ready(
   function () {
-    // $('.accounts').hover(
-    //   function () {
-    //     dropdownHover();
-    //   }
-    // );
-    $('.accounts').click(
+    $('.dropdownlink').click(
       function () {
-        dropdownClick();
+        var hover = $(this);
+        var dropdown = hover.children('.dropdown');
+        dropdown.toggleClass('active');
       }
     );
-    console.log($('.accounts'));
+    $('.dropdownlink').mouseenter(
+      function () {
+        var hover = $(this);
+        var dropdown = hover.children('.dropdown');
+        dropdown.addClass('active');
+      }
+    );
+    $('.dropdownlink').mouseleave(
+      function () {
+        var hover = $(this);
+        var dropdown = hover.children('.dropdown');
+        dropdown.removeClass('active');
+      }
+    );
   }
 );
 
 // function
 // hover on the item and make a dropdown menu appear
-function dropdownHover() {
-  // var hover = $(this);
-  var hover = $('.accounts');
-  var dropdown = hover.children('.dropdown');
-  dropdown.addClass('active');
-}
+// function dropdownHover() {
+//   // var hover = $(this);
+//   var hover = $('.accounts');
+//   var dropdown = hover.children('.dropdown');
+//   dropdown.addClass('active');
+// }
 
 // click on the item and make a dropdown menu appear
-function dropdownClick() {
-  // var hover = $(this);
-  var hover = $('.accounts');
-  console.log(hover);
-  var dropdown = hover.children('.dropdown');
-  console.log(dropdown);
-  dropdown.toggle('active');
-}
+// function dropdownClick() {
+//   var hover = $(this);
+//   console.log(hover);
+//   // console.log($('.accounts'));
+//   // var hover = $('.accounts');
+//   var dropdown = hover.children('.dropdown');
+//   dropdown.toggleClass('active');
+// }
