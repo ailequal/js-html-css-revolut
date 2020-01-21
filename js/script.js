@@ -8,18 +8,28 @@ $(document).ready(
     //     dropdown.toggleClass('active');
     //   }
     // );
-    $('.dropdownlink').mouseenter(
+    // $('.dropdownlink').click(
+    //   function () {
+    //     dropdownClick($(this));
+    //   }
+    // );
+    // $('.dropdownlink').mouseenter(
+    //   function () {
+    //     var hover = $(this);
+    //     var dropdown = hover.children('.dropdown');
+    //     dropdown.addClass('active');
+    //   }
+    // );
+    // $('.dropdownlink').mouseleave(
+    //   function () {
+    //     var hover = $(this);
+    //     var dropdown = hover.children('.dropdown');
+    //     dropdown.removeClass('active');
+    //   }
+    // );
+    $('.dropdownlink').hover(
       function () {
-        var hover = $(this);
-        var dropdown = hover.children('.dropdown');
-        dropdown.addClass('active');
-      }
-    );
-    $('.dropdownlink').mouseleave(
-      function () {
-        var hover = $(this);
-        var dropdown = hover.children('.dropdown');
-        dropdown.removeClass('active');
+        dropdownHover($(this));
       }
     );
     $('.hamburger > a').click(
@@ -37,21 +47,16 @@ $(document).ready(
   }
 );
 
+
 // function
 // hover on the item and make a dropdown menu appear
-// function dropdownHover() {
-//   // var hover = $(this);
-//   var hover = $('.accounts');
-//   var dropdown = hover.children('.dropdown');
-//   dropdown.addClass('active');
-// }
+function dropdownHover(selection) {
+  var dropdown = selection.children('.dropdown');
+  dropdown.toggleClass('active');
+}
 
 // click on the item and make a dropdown menu appear
-// function dropdownClick() {
-//   var hover = $(this);
-//   console.log(hover);
-//   // console.log($('.accounts'));
-//   // var hover = $('.accounts');
-//   var dropdown = hover.children('.dropdown');
-//   dropdown.toggleClass('active');
-// }
+function dropdownClick(selection) {
+  var dropdown = selection.children('.dropdown');
+  dropdown.toggleClass('active');
+}
